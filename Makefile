@@ -50,6 +50,8 @@ CFLAGS = -Wall -Wextra -Werror
 AR = ar rcs
 RM = rm -f
 
+OBJS_BONUS = $(SRCS_BONUS:.c=.o)
+
 all: $(NAME)
 
 OBJS = $(SRCS:.c=.o)
